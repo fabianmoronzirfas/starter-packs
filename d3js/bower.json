@@ -1,0 +1,23 @@
+{
+  "name": "d3js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fabiantheblind/starter-packs",
+  "authors": [
+    "Fabian Moron Zirfas"
+  ],
+  "description": "a starter pack for d3js",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "d3": "~3.4.11",
+    "min": "*"
+  }
+}

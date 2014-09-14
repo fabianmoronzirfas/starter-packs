@@ -1,0 +1,19 @@
+body {
+  font-family: 'Lora', serif;
+/*  background-image: url("../images/ricepaper2/ricepaper2.png");*/
+}
+
+.container {
+  padding-top: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bar  {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
