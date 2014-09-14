@@ -1,0 +1,24 @@
+{
+  "name": "chartist-js",
+  "version": "0.1.0",
+  "authors": [
+    "fabiantheblind"
+  ],
+  "description": "a starterpack for using chartist",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://api.github.com/repos/fabiantheblind/starter-packs",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chartist": "~0.1.12",
+    "jquery": "~2.1.1",
+    "min": "*"
+  }
+}

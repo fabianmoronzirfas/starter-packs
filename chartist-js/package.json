@@ -1,0 +1,28 @@
+{
+  "name": "chartist-js",
+  "description": "getting started with chartist",
+  "homepage": "https://github.com/fabiantheblind/starter-packs",
+  "keywords": [],
+  "author": "Fabian Moron Zirfas <fabiantheblind@gmail.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiantheblind/starter-packs.git"
+  },
+  "main": "index.html",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": [],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
