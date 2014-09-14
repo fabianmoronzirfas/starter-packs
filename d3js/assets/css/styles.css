@@ -3,12 +3,18 @@ body {
 /*  background-image: url("../images/ricepaper2/ricepaper2.png");*/
 }
 
+
 .container {
   padding-top: 2em;
   padding-left: 10%;
   padding-right: 10%;
 }
 
+#chart,#plot{
+
+  height:100 !important;
+  width: 500 !important;
+}
 .bar  {
   font: 10px sans-serif;
   background-color: steelblue;
