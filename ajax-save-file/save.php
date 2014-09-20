@@ -13,6 +13,7 @@ $f = fopen($file, 'a+');
 fwrite($f, $cont);
 fclose($f);
 
-mail("fabiantheblind@gmail.com", "webhook picotor executed",$cont);
+// send a mail like this
+// mail("fabiantheblind@gmail.com", "webhook picotor executed",$cont);
 
 ?>

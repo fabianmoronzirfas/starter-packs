@@ -17,4 +17,9 @@ Login via ssh install bower, clone the repo and install all dependencies.
     cd starter-packs/ajax\ save\ file
     bower install
 
-Now go to
+----------
+
+Now go to `http://[YOURNAME].[SERVERNAME].uberspace.de/starter-packs/ajax-save-file/` and hit the button to save a value.  
+
+The values will be saved to a file called `values.txt` in the folder `saved`. You can also send them to yourself as an email. See [this guide](http://php.net/manual/en/function.mail.php) for more explanation.  
+

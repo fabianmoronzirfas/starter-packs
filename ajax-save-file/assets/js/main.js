@@ -15,9 +15,16 @@ $(document).ready(function() {
   $('#submitit').click(function(e) {
     var value = sldr.slider('getValue');
 
-    var current_time = 123;
-    // var tasktitle = $("input#tasktitle").val();
-    var dataString = 'current_time=' + current_time + '&value=' + value;
+  var currentdate = new Date();
+  var datetime = "Last Export: " +
+    currentdate.getDate() + "/" +
+    (currentdate.getMonth() + 1) +
+    "/" + currentdate.getFullYear() +
+    " @ " + currentdate.getHours() +
+    ":" + currentdate.getMinutes() +
+    ":" + currentdate.getSeconds();
+
+    var dataString = 'current_time=' + datetime + '&value=' + value;
 
     $.ajax({
       type: "POST",
