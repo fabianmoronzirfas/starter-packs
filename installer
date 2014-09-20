@@ -1,8 +1,10 @@
 #!/bin/bash
 
 install(){
+  cd $1
   npm install
   bower install
+  cd ..
 }
 main(){
 if hash brew 2>/dev/null; then
@@ -34,7 +36,7 @@ else
   npm install -g bower
 fi
 
-for D in *; do [ -d "${D}" ] && echo "${D}"; done
+for D in *; do [ -d "${D}" ] && install "${D}"; done
 }
 
 main
