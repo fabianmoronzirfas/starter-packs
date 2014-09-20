@@ -1,0 +1,23 @@
+{
+  "name": "ajax_save_file",
+  "version": "0.1.0",
+  "authors": [
+    "fmz"
+  ],
+  "description": "a starter pack for ajax_save_file",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "seiyria-bootstrap-slider": "~4.0.1"
+  }
+}

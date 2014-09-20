@@ -1,0 +1,26 @@
+html, body {
+  font-family: chaparral-pro, sans-serif;
+  height: 100%
+}
+#wrapper {
+  min-height: 100%;
+  height: auto!important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px
+}
+#footer {
+  height: 60px;
+  border-top: 1px solid #dadada;
+  text-align: center;
+  font-size: .8em
+}
+#footer #footer-content {
+  padding-top: 1em
+}
+.row {
+  padding-bottom: 2em
+}
+.jumbotron {
+  text-align: center
+}

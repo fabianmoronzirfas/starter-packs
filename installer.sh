@@ -1,7 +1,7 @@
 #!/bin/bash
 
 install(){
-  cd $1
+  cd "${1}"
   npm install
   bower install
   cd ..

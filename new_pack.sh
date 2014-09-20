@@ -17,7 +17,7 @@
   <body>\n
     <!-- bower:js -->\n
     <!-- endbower -->\n
-    <script type="text/js" src="assets/js/main.js"></script>\n
+    <script type="text/javascript" src="assets/js/main.js"></script>\n
   </body>\n
 </html>'
 
@@ -115,8 +115,8 @@ cd $1
   echo  $json_grnt > Gruntfile.js
   echo $json_bwr > bower.json
   echo $html_str > index.html
-  bower install jquery --save && grunt bower-install
   npm install
+  bower install jquery --save && grunt bower-install
 }
 
 main $1
