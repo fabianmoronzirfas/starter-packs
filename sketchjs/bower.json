@@ -1,13 +1,13 @@
 {
-  "name": "p5js",
+  "name": "sketchjs",
   "version": "0.1.0",
+  "homepage": "https://github.com/fabiantheblind/starter-packs",
   "authors": [
-    "Fabian Moron Zirfas"
+    "fabiantheblind <icke@fabianmoronzirfas.me>"
   ],
-  "description": "a starter pack for p5js",
+  "description": "getting started with sketch.js",
   "main": "index.html",
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,9 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "min": "*",
+    "sketch.js": "*",
     "jquery": "~2.1.1",
-    "stmd": "https://github.com/jgm/stmd.git",
-    "p5js": "~0.3.7"
+    "min": "*"
   }
 }

@@ -1,0 +1,1 @@
+touch $1/assets/css/styles.css  $1/assets/js/main.js

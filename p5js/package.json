@@ -2,7 +2,13 @@
   "name": "p5js",
   "version": "0.1.0",
   "description": "a starter pack for p5js",
+    "homepage": "https://github.com/fabiantheblind/starter-packs",
+
   "main": "index.html",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiantheblind/starter-packs.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
