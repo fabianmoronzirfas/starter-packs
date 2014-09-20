@@ -1,10 +1,55 @@
 Starter Packs for building web stuff right away  
 ===============================================
 
+This setup assumes that you have a basic knowledge of the command line. If not read for example [this guide](http://mac.appstorm.net/how-to/utilities-how-to/how-to-use-terminal-the-basics/).  
 
-To get this fully started you need to install first, homebrew, nodejs, bower, grunt-cli and the http-server node module.  
+##Getting Started  
+###Mac OSX:  
 
-Open Terminal.app and type or copy & paste the following lines.
+####__automated install__
+
+Open Terminal.app and move where you want to have your project e.g. the Desktop  
+
+    cd ~/Desktop  
+
+Then enter the following lines to download, unzip and move into the folder
+
+    curl -LOk https://github.com/fabiantheblind/starter-packs/archive/master.zip
+    unzip master.zip
+    cd starter-packs-master
+
+
+Now we will check if you have [homebrew](http://brew.sh/), [node.js](http://nodejs.org/), [bower](http://bower.io/) and [grunt](http://gruntjs.com/) if not it will install them. If you dont have the Mac OSX command-line tools homebrew will install them as well.
+After that it pulls all dependecies with npm And bower.  
+
+    sh installer.sh  
+
+Open one of the projects and start programming gowing. The projects are always organized like this:  
+
+    example
+    ├── Gruntfile.js
+    ├── assets
+    │   ├── css
+    │   │   └── styles.css
+    │   ├── images
+    │   └── js
+    │       └── main.js
+    ├── bower.json
+    ├── index.html
+    └── package.json
+
+Write your Javascript in main.js and your CSS in style.js. If you want to install new libraries for example jquery or and bootstrap type:  
+
+    bower install jquery  bootstrap --save
+
+If the library is well organized you can inject them with grunt into your index.html by writing:  
+
+    grunt bower-install
+
+
+--------  
+
+####__manual install__  
 
 install homebrew:  
 
@@ -16,7 +61,7 @@ install node with homebrew:
 
 install bower grunt and http-server
 
-    npm install -g grunt-cli bower http-server
+    npm install -g grunt-cli bower
 
 Done.  
 
@@ -30,6 +75,25 @@ Then run
     npm install && bower install  
 
 Now you should be good to go.  
+
+
+###Windows  
+
+tbd  
+
+##Create a new pack  
+
+###Mac OSX  
+
+type into Terminal in the root of the repo:  
+
+    sh new_pack.sh NAME_OF_YOUR_NEW_PACK
+
+
+
+###Windows  
+
+tbd  
 
 ##License
 

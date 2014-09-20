@@ -110,6 +110,7 @@ cd $1
  echo  $json_grnt > Gruntfile.js
  echo $json_bwr > bower.json
  echo $html_str > index.html
+ npm install && bower install
 }
 
 main $1
