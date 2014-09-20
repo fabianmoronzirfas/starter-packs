@@ -94,6 +94,10 @@ require('load-grunt-tasks')(grunt);\n
   grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);\n
 };\n"
 
+js='$(document).ready(function() {
+  $('body').prepend("<div><p>Hello World</p></div>");
+});'
+
 main(){
   if [ $# -eq 0 ]
   then
@@ -104,13 +108,15 @@ fi
 # mkdir $1
 mkdir -p $1/assets/css $1/assets/images $1/assets/js
 # make files
-touch $1/assets/css/styles.css  $1/assets/js/main.js
+touch $1/assets/css/styles.css
+echo $js > $1/assets/js/main.js
 cd $1
- echo $json_pkg > package.json
- echo  $json_grnt > Gruntfile.js
- echo $json_bwr > bower.json
- echo $html_str > index.html
- npm install && bower install
+  echo $json_pkg > package.json
+  echo  $json_grnt > Gruntfile.js
+  echo $json_bwr > bower.json
+  echo $html_str > index.html
+  bower install jquery --save && grunt bower-install
+  npm install
 }
 
 main $1

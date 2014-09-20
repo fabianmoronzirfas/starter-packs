@@ -24,7 +24,7 @@ After that it pulls all dependecies with npm And bower.
 
     sh installer.sh  
 
-Open one of the projects and start programming gowing. The projects are always organized like this:  
+Open one of the projects and start programming. The projects are always organized like this:  
 
     example
     ├── Gruntfile.js
