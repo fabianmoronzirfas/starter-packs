@@ -1,6 +1,6 @@
 #!/bin/bash
 
-install(){
+installnpmbower(){
   cd "${1}"
   npm install
   bower install
@@ -36,7 +36,7 @@ else
   npm install -g bower
 fi
 
-for D in *; do [ -d "${D}" ] && install "${D}"; done
+for D in *; do [ -d "${D}" ] && installnpmbower "${D}"; done
 }
 
 main
