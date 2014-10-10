@@ -78,8 +78,14 @@ Now you should be good to go.
 
 
 ###Windows  
+Install Node.js (infos taken [from here](http://dailyjs.com/2012/05/03/windows-and-node-1/). Not tested yet).  
 
-tbd  
+> To download Node, go to nodejs.org, click “Download”, and click “Windows Installer”. This will give you a Windows Installer (MSI) file that will install Node and npm
+>Running the Windows installer will show a wizard, it’s pretty easy to follow. It’s just like installing any other Windows program – the Node binaries will end up in C:\Program Files (x86)\nodejs\, and will be accessible from cmd.exe.  
+
+Then install grunt and bower like on Osx by running in the cmd.exe  
+
+    npm install -g grunt-cli bower
 
 ##Create a new pack  
 
@@ -93,8 +99,7 @@ type into Terminal in the root of the repo:
 
 ###Windows  
 
-tbd  
-
+tbd
 
 ###More Tools
 
