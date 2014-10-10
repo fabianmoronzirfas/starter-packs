@@ -95,6 +95,10 @@ type into Terminal in the root of the repo:
 
 tbd  
 
+
+###More Tools
+
+If you can't wait for more starter packs take a look into [datavisualization.ch](http://datavisualization.ch/).  
 ##License
 
 The MIT License (MIT)
