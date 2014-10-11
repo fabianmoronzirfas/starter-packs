@@ -1,0 +1,36 @@
+<!doctype html>
+ <html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>a title</title>
+ <meta name="description" content="something">
+ <meta name="author" content="barebones">
+
+	<style>
+	#myCanvas{
+		width: 500px;
+		/*height: 100%;*/
+	}
+	</style>
+
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ </head>
+ <body>
+<canvas id="myCanvas"></canvas>
+<script>
+	var canvas = document.getElementById('myCanvas');
+	var ctx = canvas.getContext('2d');
+	ctx.fillStyle = "rgb(0,0,0)";
+	 ctx.beginPath();
+	    for(var x = 0; x < ctx.canvas.width;x += 10){
+	    	for(var y = 0; y < ctx.canvas.height; y+=10){
+	    		        ctx.fillRect (x, y, 5, 5);
+	    	}
+	    }
+	    ctx.closePath();
+	    ctx.stroke();
+</script>
+ </body>
+ </html>
