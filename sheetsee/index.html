@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic,400,700' rel='stylesheet' type='text/css'>
+      <title>sheetsee</title>
+      <!-- <meta charset="utf-8"> -->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script type="text/javascript" src="bower_components/tabletop/src/tabletop.js"></script>
+      <script type="text/javascript" src='bower_components/sheetsee/js/sheetsee.js'></script>
+      <link rel="stylesheet" type="text/css" href="bower_components/sheetsee/css/sss.css">
+      <style type="text/css">
+        body{
+          font-family: 'Vollkorn', serif;
+        }
+        .names{
+          background-color: black;
+          color:white;
+          margin: 1em;
+        }
+      </style>
+    </head>
+    <body>
+    <!-- the following will hold the result -->
+      <div id="target"></div>
+
+
+      <script type="text/javascript">
+      // needed for sheetsee
+          document.addEventListener('DOMContentLoaded', function() {
+              var URL = "1oNaINALGBYDp2RGnE1WL5TNk_5qEjqlnmSCbVlMUWME";
+              Tabletop.init( { key: URL, callback: myData, simpleSheet: true } );
+          });
+
+          // now we have data lets do something with it
+          function myData(data) {
+            // loop that data
+            for(var i = 0; i < data.length;i++){
+              console.log(data[i]);
+              var n = data[i].nameornickname.substr(0,4) + String(i);
+                $('#target').append("<div id='"+ n +"' class='names'>" + data[i].nameornickname  + " " + data[i].department+ "</div>" );
+              var w = parseInt(data[i].semester) * 100;
+              $('#'+n).width(w +100);
+            }
+              // All the sheetsee things you want to do!
+          }
+      </script>
+    </body>
+  </html>
