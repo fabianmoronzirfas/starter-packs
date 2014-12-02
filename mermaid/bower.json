@@ -1,0 +1,25 @@
+{
+  "name": "mermaid",
+  "version": "0.1.0",
+  "authors": [
+    "fmz"
+  ],
+  "description": "a starter pack for mermaid",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "mermaid": "~0.2.10",
+    "d3": "~3.4.13",
+    "dagre-d3": "~0.3.2"
+  },
+  "devDependencies": {}
+}

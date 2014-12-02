@@ -1,0 +1,28 @@
+<!doctype html>
+ <html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>mermaid sample</title>
+ <meta name="description" content="something">
+ <meta name="author" content="mermaid">
+ <!-- bower:css -->
+ <!-- endbower -->
+ <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ </head>
+ <body>
+  <div class="mermaid">
+  graph LR;
+    A[Hard edge]-->|Link text|B(Round edge);
+    B-->C{Decision};
+    C-->|One|D[Result one];
+    C-->|Two|E[Result two];
+</div>
+ <!-- bower:js -->
+ <!-- endbower -->
+ <script src="bower_components/mermaid/dist/mermaid.full.js"></script>
+ <script type="text/javascript" src="assets/js/main.js"></script>
+ </body>
+ </html>
