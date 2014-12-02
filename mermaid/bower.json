@@ -16,10 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
-    "mermaid": "~0.2.10",
-    "d3": "~3.4.13",
-    "dagre-d3": "~0.3.2"
+    "mermaid": "~0.2.10"
   },
   "devDependencies": {}
 }
