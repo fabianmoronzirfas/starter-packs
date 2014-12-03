@@ -1,0 +1,21 @@
+{
+  "name": "jquery-readjson-file",
+  "version": "0.1.0",
+  "authors": [
+    "icke"
+  ],
+  "description": "a starter pack for jquery-readjson-file",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
